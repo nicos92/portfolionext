@@ -1,4 +1,4 @@
-import type { Project, SkillCategory } from '@/lib/types';
+import type { Project, SkillCategory, Education } from '@/lib/types';
 import { placeholderImages } from '@/lib/placeholder-images';
 
 export const PROJECTS: Project[] = [
@@ -30,6 +30,33 @@ export const PROJECTS: Project[] = [
     demoUrl: 'https://github.com/nicos92/TEPing',
   },
 ];
+
+export const EDUCATION: Education[] = [
+    {
+      title: 'Carrera Terciaria en Análisis, Desarrollo y Programación de Aplicaciones',
+      institution: 'I.S.F.T. N° 93 Presidente Arturo Umberto Illia',
+      date: 'Marzo 2024 - Actualmente cursando el segundo año',
+      description: 'Actualmente profundizando en paradigmas de programación, diseño de bases de datos, y metodologías de desarrollo de software para construir aplicaciones robustas y escalables.',
+    },
+    {
+      title: 'Curso Online Desarrollador JAVA intermedio',
+      institution: 'U.T.N. Universidad Tecnológica Nacional',
+      date: 'Marzo 2023 - Diciembre 2023',
+      description: 'Curso centrado en el desarrollo de aplicaciones backend con Spring Framework, manejo de concurrencia, y patrones de diseño avanzados para la creación de servicios web eficientes.',
+    },
+    {
+      title: 'Curso Online Desarrollador JAVA inicial',
+      institution: 'U.T.N. Universidad Tecnológica Nacional',
+      date: 'Marzo 2022 - Diciembre 2022',
+      description: 'Formación inicial en el lenguaje JAVA, cubriendo fundamentos de la programación orientada a objetos, estructuras de datos, y desarrollo de algoritmos.',
+    },
+    {
+      title: 'Curso Presencial de Programación WEB',
+      institution: 'U.T.N. Universidad Tecnológica Nacional',
+      date: 'Marzo 2022 - Diciembre 2022',
+      description: 'Introducción al desarrollo web full-stack, abarcando desde la maquetación con HTML y CSS hasta la programación del lado del cliente con JavaScript y del servidor.',
+    },
+]
 
 export const SKILLS: SkillCategory = {
   expert: [

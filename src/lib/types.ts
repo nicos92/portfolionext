@@ -14,3 +14,10 @@ export type SkillCategory = {
   intermediate: string[];
   familiar: string[];
 };
+
+export type Education = {
+  title: string;
+  institution: string;
+  date: string;
+  description: string;
+};
