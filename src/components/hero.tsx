@@ -10,6 +10,7 @@ export function Hero() {
         backgroundImage: "url('/pexels-alohaphotostudio-10471895.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
       }}
     >
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-0"></div>
