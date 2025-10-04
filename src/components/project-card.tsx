@@ -36,7 +36,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         )}
         <CardDescription>{project.description}</CardDescription>
       </CardContent>
-      <CardFooter className="flex justify-end gap-2">
+      <CardFooter className="flex justify-end gap-2 text-secondary-foreground">
         <Button variant="secondary" asChild>
           <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
             <Github />
