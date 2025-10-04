@@ -2,21 +2,21 @@
   "placeholderImages": [
     {
       "id": "proj1-img",
-      "description": "Una imagen de un auto deportivo en una carretera.",
-      "imageUrl": "https://images.unsplash.com/photo-1579508542697-bb18e7d9aeaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhdXRvJTIwZGVwb3J0aXZvfGVufDB8fHx8MTc1OTU1NjQ3OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "auto deportivo"
+      "description": "Una imagen de una iguana verde en su hábitat natural.",
+      "imageUrl": "https://images.unsplash.com/photo-1534793542705-1a29c1584c31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpc3VhbmF8ZW58MHx8fHwxNzU5NjE3ODk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "iguana verde"
     },
     {
       "id": "proj2-img",
-      "description": "Un paisaje de montañas y lagos en Chile.",
-      "imageUrl": "https://images.unsplash.com/photo-1679250225763-c98c394630d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYWlzYWplJTIwY2hpbGV8ZW58MHx8fHwxNzU5NTU2NDc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "paisaje chile"
+      "description": "Una imagen que representa cupones o descuentos.",
+      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wcmFzfGVufDB8fHx8MTc1OTYxNzkzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cupones compras"
     },
     {
       "id": "proj3-img",
-      "description": "Una tienda de ropa con un diseño moderno.",
-      "imageUrl": "https://images.unsplash.com/photo-1672352868475-4a8733d5409b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0aWVuZGElMjByb3BhfGVufDB8fHx8MTc1OTU1NjQ3OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "tienda ropa"
+      "description": "Una imagen de un plato de comida de un restaurante.",
+      "imageUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50ZSUyMGNvbWlkYXxlbnwwfHx8fDE3NTk2MTc5NjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "comida restaurante"
     }
   ]
 }

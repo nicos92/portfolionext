@@ -5,10 +5,10 @@ export function Projects() {
   return (
     <section id="projects" className="w-full">
       <h2 className="text-center font-headline text-3xl md:text-4xl font-bold text-primary">
-        Project Showcase
+        Portafolio
       </h2>
       <p className="mt-2 mb-12 text-center text-lg text-muted-foreground">
-        A selection of projects demonstrating my skills in analysis and development.
+        Una selección de proyectos que demuestran mis habilidades en análisis y desarrollo.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {PROJECTS.map((project) => (
