@@ -4,58 +4,58 @@ import { placeholderImages } from '@/lib/placeholder-images';
 export const PROJECTS: Project[] = [
   {
     id: 'proj1',
-    title: 'Retail Insights Dashboard',
+    title: 'Autos del Mundo',
     description:
-      'An interactive dashboard for analyzing retail sales data. Built with React and D3.js, it provides insights into product performance, customer demographics, and regional sales trends. Features advanced filtering and data visualization capabilities.',
+      'Una aplicación web para amantes de los autos, donde pueden explorar diferentes modelos, ver detalles y comparar especificaciones. La aplicación utiliza HTML, CSS y JavaScript para el frontend y consume una API para obtener los datos de los vehículos.',
     image: placeholderImages.find(p => p.id === 'proj1-img'),
-    repoUrl: 'https://github.com',
-    demoUrl: '#',
+    repoUrl: 'https://github.com/nicos92/AutosDelMundo',
+    demoUrl: 'https://nicos92.github.io/AutosDelMundo/',
   },
   {
     id: 'proj2',
-    title: 'AI-Powered Document Summarizer',
+    title: 'Viajes Chile',
     description:
-      'A web application that uses natural language processing to summarize long documents and articles. The backend is built with Python and Flask, leveraging a transformer model for text summarization. The frontend is a clean, minimalist interface using Next.js.',
+      'Página web de viajes que muestra destinos turísticos en Chile. Desarrollada con HTML, CSS y jQuery, e incluye el uso de componentes de Bootstrap como carruseles y modales para una experiencia de usuario interactiva y atractiva.',
     image: placeholderImages.find(p => p.id === 'proj2-img'),
-    repoUrl: 'https://github.com',
-    demoUrl: '#',
+    repoUrl: 'https://github.com/nicos92/viajeschile',
+    demoUrl: 'https://nicos92.github.io/viajeschile/',
   },
   {
     id: 'proj3',
-    title: 'E-commerce Recommendation Engine',
+    title: 'Suricata',
     description:
-      'Developed a collaborative filtering recommendation engine for an e-commerce platform. Implemented in Python using Scikit-learn and Pandas, this system increased user engagement by providing personalized product suggestions based on purchase history.',
+      'Landing page para una tienda ficticia. El diseño es responsivo y se adapta a diferentes tamaños de pantalla, implementado con HTML y CSS. El proyecto se enfoca en la maquetación y el diseño visual de una página de producto.',
     image: placeholderImages.find(p => p.id === 'proj3-img'),
-    repoUrl: 'https://github.com',
-    demoUrl: '#',
+    repoUrl: 'https://github.com/nicos92/suricata',
+    demoUrl: 'https://nicos92.github.io/suricata/',
   },
 ];
 
 export const SKILLS: SkillCategory = {
   expert: [
-    'JavaScript (ES6+)',
-    'React & Next.js',
-    'Python',
-    'Data Analysis',
-    'SQL',
-    'HTML5 & CSS3',
+    'HTML5',
+    'CSS3',
+    'JavaScript',
+    'jQuery',
+    'Bootstrap',
+    'Git & GitHub',
   ],
   intermediate: [
     'TypeScript',
-    'Node.js & Express',
-    'Data Visualization (D3.js)',
-    'REST APIs',
-    'Docker',
-    'Git & GitHub',
+    'React',
+    'Node.js',
+    'SQL',
+    'API Rest',
+    'PostgreSQL',
   ],
-  familiar: ['Java', 'C#', 'AWS Services', 'GraphQL', 'Machine Learning Concepts'],
+  familiar: ['Python', 'Django', 'Ruby on Rails', 'Testing'],
 };
 
 export const SOFT_SKILLS: string[] = [
-  'Problem-Solving',
-  'Agile & Sprint Management',
-  'Effective Communication',
-  'Team Collaboration',
-  'Requirement Analysis',
-  'Stakeholder Presentations',
+  'Trabajo en equipo',
+  'Comunicación asertiva',
+  'Resolución de problemas',
+  'Adaptabilidad',
+  'Metodologías Ágiles',
+  'Aprendizaje continuo',
 ];

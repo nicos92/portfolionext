@@ -2,21 +2,21 @@
   "placeholderImages": [
     {
       "id": "proj1-img",
-      "description": "A dashboard showing various charts and graphs for data analysis.",
-      "imageUrl": "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXRhJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc1OTQ3MzAzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "data dashboard"
+      "description": "Una imagen de un auto deportivo en una carretera.",
+      "imageUrl": "https://images.unsplash.com/photo-1579508542697-bb18e7d9aeaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhdXRvJTIwZGVwb3J0aXZvfGVufDB8fHx8MTc1OTU1NjQ3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "auto deportivo"
     },
     {
       "id": "proj2-img",
-      "description": "A computer screen with code and abstract neural network graphics.",
-      "imageUrl": "https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxBSSUyMGNvZGV8ZW58MHx8fHwxNzU5NTQwMDcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "AI code"
+      "description": "Un paisaje de montañas y lagos en Chile.",
+      "imageUrl": "https://images.unsplash.com/photo-1679250225763-c98c394630d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYWlzYWplJTIwY2hpbGV8ZW58MHx8fHwxNzU5NTU2NDc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paisaje chile"
     },
     {
       "id": "proj3-img",
-      "description": "A grid of product images representing an e-commerce platform.",
-      "imageUrl": "https://images.unsplash.com/photo-1691096675075-de995918f3ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlY29tbWVyY2UlMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTk1NTYzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ecommerce products"
+      "description": "Una tienda de ropa con un diseño moderno.",
+      "imageUrl": "https://images.unsplash.com/photo-1672352868475-4a8733d5409b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0aWVuZGElMjByb3BhfGVufDB8fHx8MTc1OTU1NjQ3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tienda ropa"
     }
   ]
 }

@@ -31,20 +31,20 @@ import { getSkillAnalysis } from "@/app/actions";
 const formSchema = z.object({
   profile: z
     .string()
-    .min(50, "Please provide a more detailed profile summary (min 50 characters).")
-    .max(2000, "Profile summary cannot exceed 2000 characters."),
+    .min(50, "Por favor, proporciona un resumen de perfil más detallado (mínimo 50 caracteres).")
+    .max(2000, "El resumen del perfil no puede exceder los 2000 caracteres."),
   resume: z
     .string()
-    .min(100, "Please paste a more detailed resume (min 100 characters).")
-    .max(5000, "Resume text cannot exceed 5000 characters."),
+    .min(100, "Por favor, pega un currículum más detallado (mínimo 100 caracteres).")
+    .max(5000, "El texto del currículum no puede exceder los 5000 caracteres."),
   linkedInActivity: z
     .string()
-    .max(2000, "LinkedIn activity cannot exceed 2000 characters.")
+    .max(2000, "La actividad de LinkedIn no puede exceder los 2000 caracteres.")
     .optional(),
 });
 
-const profilePlaceholder = `Example: Results-driven Data Analyst with 3 years of experience in the tech industry. Proficient in Python, SQL, and data visualization tools like Tableau. Passionate about uncovering insights from data to drive business growth and improve user experience.`;
-const resumePlaceholder = `(Paste the text from your resume here...)\n\nJANE DOE\nData Analyst | Web Developer\n(123) 456-7890 | jane.doe@email.com | linkedin.com/in/janedoe\n\nSUMMARY\nA highly motivated Analyst with expertise in data extraction, modeling, and visualization, coupled with a strong foundation in web development...`;
+const profilePlaceholder = `Ejemplo: Desarrollador Full-Stack con 2 años de experiencia. Apasionado por la tecnología y el desarrollo de software. Me especializo en crear aplicaciones web robustas y escalables, con un fuerte enfoque en la experiencia de usuario y el código limpio.`;
+const resumePlaceholder = `(Pega el texto de tu currículum aquí...)\n\nNICOLÁS SANDOVAL\nDesarrollador Full-Stack\n(123) 456-7890 | nico.sandoval@email.com | linkedin.com/in/nicolas-sandoval-developer\n\nRESUMEN\nUn desarrollador motivado con experiencia en la creación de aplicaciones web, desde el frontend hasta el backend...`;
 
 export function SkillAnalyzer() {
   const [analysis, setAnalysis] = useState<AnalyzeSkillsOutput | null>(null);
@@ -69,7 +69,7 @@ export function SkillAnalyzer() {
     } catch (error: any) {
       toast({
         variant: "destructive",
-        title: "Analysis Failed",
+        title: "Análisis Fallido",
         description: error.message,
       });
     } finally {
@@ -85,10 +85,10 @@ export function SkillAnalyzer() {
             <Sparkles className="w-8 h-8" />
           </div>
           <CardTitle className="font-headline text-3xl md:text-4xl text-primary">
-            AI Skill Analyzer
+            Analizador de Habilidades con IA
           </CardTitle>
           <CardDescription className="text-lg">
-            Identify gaps and get personalized suggestions for improvement.
+            Identifica brechas y obtén sugerencias personalizadas para mejorar.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -99,7 +99,7 @@ export function SkillAnalyzer() {
                 name="profile"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-lg">Profile Summary</FormLabel>
+                    <FormLabel className="text-lg">Resumen de Perfil</FormLabel>
                     <FormControl>
                       <Textarea
                         placeholder={profilePlaceholder}
@@ -108,7 +108,7 @@ export function SkillAnalyzer() {
                       />
                     </FormControl>
                     <FormDescription>
-                      A brief summary from your LinkedIn or portfolio.
+                      Un breve resumen de tu LinkedIn o portafolio.
                     </FormDescription>
                     <FormMessage />
                   </FormItem>
@@ -119,7 +119,7 @@ export function SkillAnalyzer() {
                 name="resume"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-lg">Resume Text</FormLabel>
+                    <FormLabel className="text-lg">Texto del Currículum</FormLabel>
                     <FormControl>
                       <Textarea
                         placeholder={resumePlaceholder}
@@ -128,7 +128,7 @@ export function SkillAnalyzer() {
                       />
                     </FormControl>
                     <FormDescription>
-                      Paste the full text content of your resume.
+                      Pega el contenido completo de tu currículum.
                     </FormDescription>
                     <FormMessage />
                   </FormItem>
@@ -140,18 +140,17 @@ export function SkillAnalyzer() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="text-lg">
-                      Recent LinkedIn Activity (Optional)
+                      Actividad Reciente en LinkedIn (Opcional)
                     </FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="e.g., 'Commented on a post about advances in machine learning.' or 'Shared an article about new features in Next.js 14.'"
+                        placeholder="Ej: 'Comenté en una publicación sobre avances en machine learning.' o 'Compartí un artículo sobre nuevas funciones en Next.js 14.'"
                         className="min-h-[100px]"
                         {...field}
                       />
                     </FormControl>
                     <FormDescription>
-                      Share a few examples of your recent posts, comments, or
-                      shared articles.
+                      Comparte algunos ejemplos de tus publicaciones, comentarios o artículos recientes.
                     </FormDescription>
                     <FormMessage />
                   </FormItem>
@@ -162,12 +161,12 @@ export function SkillAnalyzer() {
                   {isLoading ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Analyzing...
+                      Analizando...
                     </>
                   ) : (
                     <>
                       <Search className="mr-2 h-4 w-4" />
-                      Analyze My Skills
+                      Analizar Mis Habilidades
                     </>
                   )}
                 </Button>
@@ -178,22 +177,22 @@ export function SkillAnalyzer() {
           {analysis && (
             <div className="mt-12 space-y-8">
               <h3 className="text-center font-headline text-2xl font-bold text-primary">
-                Analysis Results
+                Resultados del Análisis
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <ResultCard
                   icon={<Search className="w-6 h-6" />}
-                  title="Missing Skills"
+                  title="Habilidades Faltantes"
                   items={analysis.missingSkills}
                 />
                 <ResultCard
                   icon={<ListChecks className="w-6 h-6" />}
-                  title="Underdeveloped Skills"
+                  title="Habilidades por Desarrollar"
                   items={analysis.underdevelopedSkills}
                 />
                 <ResultCard
                   icon={<Lightbulb className="w-6 h-6" />}
-                  title="Improvement Suggestions"
+                  title="Sugerencias de Mejora"
                   items={analysis.suggestions}
                 />
               </div>
@@ -228,7 +227,7 @@ function ResultCard({
             ))}
           </ul>
         ) : (
-          <p className="text-muted-foreground">None identified.</p>
+          <p className="text-muted-foreground">Ninguna identificada.</p>
         )}
       </CardContent>
     </Card>

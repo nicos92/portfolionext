@@ -8,16 +8,16 @@ export function Footer() {
     <footer className="bg-card border-t">
       <div className="container mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between">
         <p className="text-sm text-muted-foreground">
-          &copy; {currentYear} PortfolioPro. All Rights Reserved.
+          &copy; {currentYear} Nicolás Sandoval. Todos los derechos reservados.
         </p>
         <div className="flex gap-2 mt-4 sm:mt-0">
           <Button variant="ghost" size="icon" asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/nicos92" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github className="h-5 w-5" />
             </a>
           </Button>
           <Button variant="ghost" size="icon" asChild>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/nicolas-sandoval-developer/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Linkedin className="h-5 w-5" />
             </a>
           </Button>
