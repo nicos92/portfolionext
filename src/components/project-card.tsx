@@ -34,7 +34,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 />
             </div>
         )}
-        <CardDescription as="div">
+        <CardDescription className="div">
           <p><strong>Problema:</strong> {project.description.problem}</p>
           <p><strong>Solución:</strong> {project.description.solution}</p>
           <p><strong>Stack:</strong> {project.description.stack}</p>
@@ -51,3 +51,4 @@ export function ProjectCard({ project }: ProjectCardProps) {
     </Card>
   );
 }
+
