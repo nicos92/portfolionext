@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Portafolio de Nicolás Sandoval',
+  title: 'CV de Nicolás Sandoval - Analista, Desarrollador y Programador de Aplicaciones',
   description: 'Un portafolio profesional para mostrar tus habilidades y proyectos.',
 };
 
