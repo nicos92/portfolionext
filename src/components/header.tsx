@@ -1,5 +1,4 @@
-import { Code, Download } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Code } from "lucide-react";
 
 export function Header() {
   return (
@@ -11,12 +10,6 @@ export function Header() {
             Nicolás Sandoval
           </h1>
         </div>
-        <Button asChild>
-          <a href="https://nicos92.github.io/CV-Nicolas-Sandoval/CV%20Nicolas%20Sandoval%20(programador).pdf" target="_blank" rel="noopener noreferrer">
-            <Download />
-            Descargar CV
-          </a>
-        </Button>
       </div>
     </header>
   );
