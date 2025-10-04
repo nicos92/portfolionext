@@ -1,6 +1,7 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { Projects } from "@/components/projects";
+import { Experience } from "@/components/experience";
 import { Skills } from "@/components/skills";
 import { Footer } from "@/components/footer";
 
@@ -12,6 +13,7 @@ export default function Home() {
         <div className="flex flex-col gap-20 md:gap-32">
           <Hero />
           <Projects />
+          <Experience />
           <Skills />
         </div>
       </main>
