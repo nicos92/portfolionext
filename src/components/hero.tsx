@@ -7,7 +7,7 @@ export function Hero() {
       id="hero" 
       className="relative flex flex-col md:flex-row items-center gap-8 py-20 px-4 md:px-6 rounded-lg overflow-hidden"
       style={{
-        backgroundImage: 'url(https://images.pexels.com/photos/10471895/pexels-photo-10471895.jpeg)',
+        backgroundImage: "url('/pexels-alohaphotostudio-10471895.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
