@@ -34,7 +34,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 />
             </div>
         )}
-        <CardDescription>{project.description}</CardDescription>
+        <CardDescription as="div">
+          <p><strong>Problema:</strong> {project.description.problem}</p>
+          <p><strong>Solución:</strong> {project.description.solution}</p>
+          <p><strong>Stack:</strong> {project.description.stack}</p>
+        </CardDescription>
       </CardContent>
       <CardFooter className="flex justify-end gap-2 text-secondary-foreground">
         <Button variant="secondary" asChild>
