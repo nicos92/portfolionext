@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Github, ExternalLink } from "lucide-react";
+import { Github } from "lucide-react";
 
 import type { Project } from "@/lib/types";
 import {
@@ -44,13 +44,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <Button variant="secondary" asChild>
           <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
             <Github />
-            View Code
-          </a>
-        </Button>
-        <Button asChild>
-          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-            <ExternalLink />
-            Live Demo
+            Ver Código
           </a>
         </Button>
       </CardFooter>
